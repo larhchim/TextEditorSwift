@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var underl: UIButton!
+    @IBOutlet weak var tt1: UILabel!
+    
+    @IBOutlet weak var tt2: UILabel!
+    
     
     @IBOutlet weak var grasText: UIButton!
     
@@ -18,6 +23,8 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var souligneText: UIButton!
+    
+    @IBOutlet weak var bigtext: UIButton!
     
     
     @IBOutlet weak var smiley1: UIImageView!
@@ -44,6 +51,58 @@ class ViewController: UIViewController {
     var fontt:UIFont?
     var und:Bool = false
     
+    @IBOutlet weak var tf1: UILabel!
+    
+    @IBOutlet weak var tf3: UILabel!
+    @IBOutlet weak var tf2: UILabel!
+    @IBOutlet weak var swMenu: UISwitch!
+    
+    @IBAction func swMenuAction(_ sender: UISwitch) {
+        
+        if sender.isOn == false {
+            self.grasText.isHidden = false
+            self.italiqueText.isHidden = false
+            
+            self.souligneText.isHidden = false
+            
+            self.bigtext.isHidden = false
+            self.tt1.isHidden = false
+            self.tt2.isHidden = false
+            self.sw1.isHidden = false
+            self.sw2.isHidden = false
+            self.sw3.isHidden = false
+            self.tf1.isHidden = false
+            self.tf2.isHidden = false
+            self.tf3.isHidden = false
+            self.smiley1.isHidden = false
+            self.smiley2.isHidden = false
+            self.smiley3.isHidden = false
+            self.underl.isHidden = false
+            
+            }else{
+            
+            self.grasText.isHidden = true
+                    self.italiqueText.isHidden = true
+                    
+                    self.souligneText.isHidden = true
+                    
+                    self.bigtext.isHidden = true
+                    self.tt1.isHidden = true
+                    self.tt2.isHidden = true
+                    self.sw1.isHidden = true
+                    self.sw2.isHidden = true
+                    self.sw3.isHidden = true
+                    self.tf1.isHidden = true
+                    self.tf2.isHidden = true
+                    self.tf3.isHidden = true
+                    self.smiley1.isHidden = true
+                    self.smiley2.isHidden = true
+                    self.smiley3.isHidden = true
+            self.underl.isHidden = true
+
+        }
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
